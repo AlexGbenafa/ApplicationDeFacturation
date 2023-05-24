@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ApplicationDeFacturation.Models.EtatFacture;
 
 namespace ApplicationDeFacturation.Models
 {
@@ -13,8 +14,9 @@ namespace ApplicationDeFacturation.Models
             int arret = 0;
 
             AjoutClient ajoutClient = new AjoutClient();
-            AjoutFacture ajoutFacture = new AjoutFacture();
-            
+            AjoutPanier ajoutPanier = new AjoutPanier();
+            Panier? panier = null;
+            status etatFacture = new status();
 
             do
             {
@@ -34,13 +36,41 @@ namespace ApplicationDeFacturation.Models
 
             while (arret == 1)
             {
-                ajoutClient.AjouterClient();
-                ajoutFacture.AjouterFacture();
+                panier = ajoutPanier.AjouterPanier();
+
+                Console.WriteLine("Statut de la facture : ");
+                Console.WriteLine("0:Paye ");
+                Console.WriteLine("1:Non paye ");
+                Console.WriteLine("2:Abandone ");
+
+                int choixStatut = Convert.ToInt32(Console.ReadLine());
+
+                switch (choixStatut)
+                {
+                    case 0:
+                        etatFacture = status.Paye;
+                        break;
+
+                    case 1:
+                        etatFacture = status.Non_paye;
+                        break;
+
+                    case 2:
+                        etatFacture = status.Abandonne;
+                        break;
+                }
+
+                // Demander si l'utilisateur veut ajouter une autre facture
+                Console.WriteLine("Voulez-vous ajouter une autre facture ?");
+                Console.WriteLine("(1) Oui, (0) Non");
+                arret = Convert.ToInt32(Console.ReadLine());
             }
 
-            DateOnly laDate = DateOnly.FromDateTime(DateTime.Now);
-            //Facture facture = new Facture();
-
+            if (panier != null)
+            {
+                DateOnly laDate = DateOnly.FromDateTime(DateTime.Now);
+                Facture facture = new Facture(laDate, 10000, panier, etatFacture);
+            }
         }
     }
 }

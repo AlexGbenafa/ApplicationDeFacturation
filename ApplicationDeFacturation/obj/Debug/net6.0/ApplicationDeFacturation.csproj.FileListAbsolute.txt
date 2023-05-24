@@ -1,0 +1,15 @@
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\bin\Debug\net6.0\ApplicationDeFacturation.exe
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\bin\Debug\net6.0\ApplicationDeFacturation.deps.json
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\bin\Debug\net6.0\ApplicationDeFacturation.runtimeconfig.json
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\bin\Debug\net6.0\ApplicationDeFacturation.dll
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\bin\Debug\net6.0\ApplicationDeFacturation.pdb
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\ApplicationDeFacturation.csproj.AssemblyReference.cache
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\ApplicationDeFacturation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\ApplicationDeFacturation.AssemblyInfoInputs.cache
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\ApplicationDeFacturation.AssemblyInfo.cs
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\ApplicationDeFacturation.csproj.CoreCompileInputs.cache
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\ApplicationDeFacturation.dll
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\refint\ApplicationDeFacturation.dll
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\ApplicationDeFacturation.pdb
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\ApplicationDeFacturation.genruntimeconfig.cache
+C:\Users\alexk\OneDrive\Bureau\ApplicationDeFacturation\ApplicationDeFacturation\obj\Debug\net6.0\ref\ApplicationDeFacturation.dll

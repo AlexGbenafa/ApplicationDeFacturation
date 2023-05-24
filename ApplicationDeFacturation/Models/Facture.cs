@@ -17,16 +17,27 @@ namespace ApplicationDeFacturation.Models
         private EtatFacture etatFacture { get; set; }
 
         private static int dernierIdFacture = 0;
+        private DateOnly laDate;
+        private int v;
+        private EtatFacture.status etatFacture1;
 
         //Constructeur
-        public Facture(Client unClient, DateOnly uneDateDelivranceFacture, decimal unMontantFacture, Panier unPanier, EtatFacture unEtatFacture)
+        public Facture( DateOnly uneDateDelivranceFacture, decimal unMontantFacture, Panier unPanier, EtatFacture unEtatFacture)
         {
             idFacture = dernierIdFacture++;
-            client = unClient;
+            //client = unClient;
             dateDelivranceFacture = uneDateDelivranceFacture;
             montantFacture = unMontantFacture;
             panier = unPanier;
             etatFacture = unEtatFacture;
+        }
+
+        public Facture(DateOnly laDate, int v, Panier panier, EtatFacture.status etatFacture1)
+        {
+            this.laDate = laDate;
+            this.v = v;
+            this.panier = panier;
+            this.etatFacture1 = etatFacture1;
         }
     }
 }

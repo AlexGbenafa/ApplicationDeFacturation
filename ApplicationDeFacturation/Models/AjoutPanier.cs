@@ -8,7 +8,7 @@ namespace ApplicationDeFacturation.Models
 {
     public class AjoutPanier
     {
-        public void AjouterPanier()
+        public Panier? AjouterPanier()
         {
             AjoutProduit ajoutProduit = new AjoutProduit();
 
@@ -18,7 +18,10 @@ namespace ApplicationDeFacturation.Models
             {
                 DateOnly laDate = DateOnly.FromDateTime(DateTime.Now);
                 Panier panier = new Panier(unProduit, laDate);
+                return panier;
             }
+
+            return null;
         }
     }
 }
