@@ -13,6 +13,7 @@ namespace ApplicationDeFacturation.Models
             int arret = 0;
 
             AjoutClient ajoutClient = new AjoutClient();
+            AjoutFacture ajoutFacture = new AjoutFacture();
             
 
             do
@@ -34,11 +35,11 @@ namespace ApplicationDeFacturation.Models
             while (arret == 1)
             {
                 ajoutClient.AjouterClient();
-
+                ajoutFacture.AjouterFacture();
             }
 
             DateOnly laDate = DateOnly.FromDateTime(DateTime.Now);
-            //Facture facture = new Client();
+            //Facture facture = new Facture();
 
         }
     }

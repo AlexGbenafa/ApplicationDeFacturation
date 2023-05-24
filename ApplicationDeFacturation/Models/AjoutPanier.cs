@@ -12,10 +12,13 @@ namespace ApplicationDeFacturation.Models
         {
             AjoutProduit ajoutProduit = new AjoutProduit();
 
-            ajoutProduit.AjouterProduit();
+            Produit? unProduit = ajoutProduit.AjouterProduit();
 
-            DateOnly laDate = DateOnly.FromDateTime(DateTime.Now);
-            Panier panier = new Panier(, laDate);
+            if (unProduit != null)
+            {
+                DateOnly laDate = DateOnly.FromDateTime(DateTime.Now);
+                Panier panier = new Panier(unProduit, laDate);
+            }
         }
     }
 }

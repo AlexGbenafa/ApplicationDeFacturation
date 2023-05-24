@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationDeFacturation.Models
 {
-    public class Menu
+    internal class Menu
     {
     }
 }
